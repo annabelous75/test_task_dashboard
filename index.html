@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Test Task</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+      integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <link rel="stylesheet" href="./sass/main.css" />
+  <body>
+    <div class="container">
+    <aside class="menu">
+        <div class="menu__title--div">
+            <svg class="menu__title-icon"><use href="./images/symbol-defs.svg#icon-setting"></use></svg>
+            <h1 class="menu__title">Dashboard</h1>
+            <p class="menu__title--text">v.01</p>
+        </div>
+     
+      <ul class="menu__list">
+        <li class="menu__item">
+          <svg class="menu__item-icon">
+            <use href="./images/symbol-defs.svg#icon-key-square"></use>
+          </svg>
+          <p class="menu__item__text">Dashboard</p>
+          <svg class="menu__icon"> <use href="./images/symbol-defs.svg#icon-chevron-right"></use></svg>
+        </li>
+        <li class="menu__item">
+          <svg class="menu__item-icon">
+            <use href="./images/symbol-defs.svg#icon-d-square"></use>
+          </svg>
+          <p class="menu__item__text">Product</p>
+          <svg class="menu__icon"> <use href="./images/symbol-defs.svg#icon-chevron-right"></use></svg>
+        </li>
+        <li class="menu__item__accent">
+          <svg class="menu__item-icon">
+            <use href="./images/symbol-defs.svg#icon-user-square"></use>
+          </svg>
+          <p class="menu__item__text__accent">Customers</p>
+          <svg class="menu__icon"> <use href="./images/symbol-defs.svg#icon-chevron-right-wh"></use></svg>
+        </li>
+        <li class="menu__item">
+          <svg class="menu__item-icon">
+            <use href="./images/symbol-defs.svg#icon-wallet-money"></use>
+          </svg>
+          <p class="menu__item__text">Income</p>
+          <svg class="menu__icon"> <use href="./images/symbol-defs.svg#icon-chevron-right"></use></svg>
+        </li>
+        <li class="menu__item">
+          <svg class="menu__item-icon">
+            <use href="./images/symbol-defs.svg#icon-discount-shape"></use>
+          </svg>
+          <p class="menu__item__text">Promote</p>
+          <svg class="menu__icon"> <use href="./images/symbol-defs.svg#icon-chevron-right"></use></svg>
+        </li>
+        <li class="menu__item">
+          <svg class="menu__item-icon">
+            <use href="./images/symbol-defs.svg#icon-message-question"></use>
+          </svg>
+          <p class="menu__item__text">Help</p>
+          <svg class="menu__icon"><use href="./images/symbol-defs.svg#icon-chevron-right"></use></svg> 
+        </li>
+      </ul>
+      <div class="menu__person">
+        <img src="./images/menu-person-img.jpeg" alt="menu__person" class="menu__person-image" />
+        <div class="menu__person-info">
+          <h3 class="menu__person-info-title">Evano</h3>
+          <p class="menu__person-info-text">Project Manager</p>
+        </div>
+      </div>
+    </aside>
+    <main>
+      <h2 class="main__title">Hello Evano 🖐🏻,</h2>
+      <div class="table__container">
+        <div class="table__header">
+            <div class="table__title">
+                <h2 class="table__title">All Customers</h2>
+                <p class="table__subtitle">Active Members</p>
+            </div>
+            <div class="table__search">
+                <svg class="table__search__icon">
+                    <use href="./images/symbol-defs.svg#icon-search"></use>
+                </svg>
+              <input type="text" id="searchInput" class="table__search__input" placeholder="Search"/>
+            </div>
+        </div>
+          
+          <div class="table">
+            <div class="table__row__header">
+              <div class="table__cell"><p class="table__cell-header">Customer Name</p></div>
+              <div class="table__cell"><p class="table__cell-header">Company</p></div>
+              <div class="table__cell"><p class="table__cell-header">Phone Number</p></div>
+              <div class="table__cell"><p class="table__cell-header">Email</p></div>
+              <div class="table__cell"><p class="table__cell-header">Country</p></div>
+              <div class="table__cell"><p class="table__cell-header">Status</p></div>
+            </div>
+            <div class="table__row">
+              <div class="table__cell"><p class="table__cell--text">Jane Cooper</p></div>
+              <div class="table__cell"><p class="table__cell--text">Microsoft</p></div>
+              <div class="table__cell"><p class="table__cell--text">(225) 555-0118</p></div>
+              <div class="table__cell"><p class="table__cell--text">jane@microsoft.com</p></div>
+              <div class="table__cell"><p class="table__cell--text">United States</p></div>
+              <div class="table__cell">
+                <button class="table__cell--button--active" disabled>Active</button>
+              </div>
+            </div>
+            <div class="table__row">
+              <div class="table__cell"><p class="table__cell--text">Floyd Miles</p></div>
+              <div class="table__cell"><p class="table__cell--text">Yahoo</p></div>
+              <div class="table__cell"><p class="table__cell--text">(205) 555-0100</p></div>
+              <div class="table__cell"><p class="table__cell--text">floyd@yahoo.com</p></div>
+              <div class="table__cell"><p class="table__cell--text">Kiribati</p></div>
+              <div class="table__cell">
+                <button class="table__cell--button--innactive" disabled>Inactive</button>
+              </div>
+            </div>
+            <div class="table__row">
+              <div class="table__cell"><p class="table__cell--text">Ronald Richards</p></div>
+              <div class="table__cell"><p class="table__cell--text">Adobe</p></div>
+              <div class="table__cell"><p class="table__cell--text">(302) 555-0107</p></div>
+              <div class="table__cell"><p class="table__cell--text">ronald@adobe.com</p></div>
+              <div class="table__cell"><p class="table__cell--text">Israel</p></div>
+              <div class="table__cell">
+                <button class="table__cell--button--innactive" disabled>Inactive</button>
+              </div>
+            </div>
+            <div class="table__row">
+              <div class="table__cell"><p class="table__cell--text">Marvin McKinney</p></div>
+              <div class="table__cell"><p class="table__cell--text">1Tesla</p></div>
+              <div class="table__cell"><p class="table__cell--text">(252) 555-0126</p></div>
+              <div class="table__cell"><p class="table__cell--text">marvin@tesla.com</p></div>
+              <div class="table__cell"><p class="table__cell--text">Iran</p></div>
+              <div class="table__cell ">
+                <button class="table__cell--button--active"disabled>Active</button>
+              </div>
+            </div>
+            <div class="table__row">
+              <div class="table__cell"><p class="table__cell--text">Jerome Bell</p></div>
+              <div class="table__cell"><p class="table__cell--text">Google</p></div>
+              <div class="table__cell"><p class="table__cell--text">(629) 555-0129</p></div>
+              <div class="table__cell"><p class="table__cell--text">jerome@google.com</p></div>
+              <div class="table__cell"><p class="table__cell--text">Réunion</p></div>
+              <div class="table__cell">
+                <button class="table__cell--button--active" disabled>Active</button>
+              </div>
+            </div>
+            <div class="table__row">
+              <div class="table__cell"><p class="table__cell--text">Kathryn Murphy</p></div>
+              <div class="table__cell"><p class="table__cell--text">Microsoft</p></div>
+              <div class="table__cell"><p class="table__cell--text">(406) 555-0120</p></div>
+              <div class="table__cell"><p class="table__cell--text">kathryn@microsoft.com</p></div>
+              <div class="table__cell"><p class="table__cell--text">Curaçao</p></div>
+              <div class="table__cell">
+                <button class="table__cell--button--active" disabled>Active</button>
+              </div>
+            </div>
+            <div class="table__row">
+              <div class="table__cell"><p class="table__cell--text">Jacob Jones</p></div>
+              <div class="table__cell"><p class="table__cell--text">Yahoo</p></div>
+              <div class="table__cell"><p class="table__cell--text">(208) 555-0112</p></div>
+              <div class="table__cell"><p class="table__cell--text">jacob@yahoo.com</p></div>
+              <div class="table__cell"><p class="table__cell--text">Brazil</p></div>
+              <div class="table__cell">
+                <button class="table__cell--button--active" disabled>Active</button>
+              </div>
+            </div>
+            <div class="table__row">
+              <div class="table__cell"><p class="table__cell--text">Kristin Watson</p></div>
+              <div class="table__cell"><p class="table__cell--text">Facebook</p></div>
+              <div class="table__cell"><p class="table__cell--text">(704) 555-0127</p></div>
+              <div class="table__cell"><p class="table__cell--text">kristin@facebook.com</p></div>
+              <div class="table__cell"><p class="table__cell--text">Åland Islands</p></div>
+              <div class="table__cell">
+                <button class="table__cell--button--innactive" disabled>Inactive</button>
+              </div>
+            </div>
+          
+        <div class="table__footer">
+            <p class="table__footer--text">Showing data 1 to 8 of  256K entries</p>
+            <div class="pagination">
+                <button class="pagination__arrow pagination__arrow--prev" disabled>&lt;</button>
+                <ul class="pagination__list">
+                  <li class="pagination__list__item pagination__list__item--active">1</li>
+                  <li class="pagination__list__item">2</li>
+                  <li class="pagination__list__item">3</li>
+                  <li class="pagination__list__item">4</li>
+                  <li class="pagination__dots">...</li>
+                  <li class="pagination__list__item">40</li>
+                </ul>
+                <button class="pagination__arrow pagination__arrow--next">&gt;</button>
+              </div>
+        </div>
+      </div>
+    </main>
+    </div>
+
+  
+  </body>
+</html>
