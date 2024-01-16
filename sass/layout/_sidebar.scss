@@ -1,192 +1,189 @@
-
 .menu {
-    background-color: $menu-text-color-accent;
-    max-width: 306px;
-    min-height: 1108px;
-  
-    .menu__title--div {
-      display: flex;
-      gap: 4px;
-      padding-top: 36px;
-    }
-  
-    .menu__title-icon {
-      width: 37px;
-      height: 37px;
-      margin-right: 4px;
-      margin-left: 13px;
-    }
-  
-    .menu__title {
-      color: $title-color;
-      font-family: "Poppins", sans-serif;
-      font-size: 26px;
-      font-weight: 600;
-      line-height: 1.5;
-      letter-spacing: 0.01em;
-      margin-top: 2px;
-    }
-  
-    .menu__title--text {
-      color: #838383;
-      font-family: "Poppins", sans-serif;
-      font-size: 10px;
-      font-weight: 500;
-      line-height: 1.5;
-      letter-spacing: -0.01em;
-      margin-top: 19px;
-    }
-  
-    .menu__toggle {
-      display: none;
-      cursor: pointer;
-      background: none;
-      border: none;
-  
-      .menu__toggle-icon {
-        width: 24px;
-        height: 24px;
-      }
-    }
-  
-    .menu__list {
-      margin-top: 22px;
-  
-      .menu__item,
-      .menu__item__accent {
-        display: flex;
-        gap: 14px;
-        padding: 11px 8px 11px 11px;
-        border-radius: 8px;
-        width: 256px;
-        height: 46px;
-        margin-top: 42px;
-  
-        &:hover {
-          background-color: $menu-hover-color;
-          color: white;
-  
-          .menu__item__text {
-            color: $menu-text-color-accent;
-          }
-        }
-  
-        .menu__item__text {
-          color: $menu-text-color;
-          font-family: "Poppins", sans-serif;
-          font-size: 14px;
-          font-weight: 500;
-          line-height: 1.5;
-          letter-spacing: -0.01em;
-          margin-top: 3px;
-        }
-      }
-  
-      .menu__item__accent {
-        background-color: $menu-hover-color;
-        display: flex;
-        gap: 14px;
-        padding: 11px 8px 11px 11px;
-        border-radius: 8px;
-        width: 256px;
-        height: 46px;
-        margin-top: 42px;
-  
-        .menu__item-icon {
-          width: 24px;
-          height: 24px;
-        }
-  
-        .menu__item__text__accent {
-          color: $menu-text-color-accent;
-          font-family: "Poppins", sans-serif;
-          font-size: 14px;
-          font-weight: 500;
-          line-height: 1.5;
-          letter-spacing: -0.01em;
-          margin-top: 3px;
-        }
-      }
-  
-      .menu__item-icon {
-        width: 24px;
-        height: 24px;
-        margin-left: 24px;
-      }
-  
-      .menu__icon {
-        width: 16px;
-        height: 16px;
-        margin-top: 5px;
-        margin-left: auto;
-      }
-    }
-  
-    .menu__person {
-      display: flex;
-      gap: 12px;
-      margin-top: 596px;
-      margin-bottom: 76px;
-      margin-left: 28px;
-      position: relative;
+  background-color: $menu-text-color-accent;
+  max-width: 306px;
+  min-height: 1108px;
 
-  
-      .menu__person-image {
-        width: 42px;
-        height: 42px;
+  .menu__title--div {
+    display: flex;
+    gap: 4px;
+    padding-top: 36px;
+  }
+
+  .menu__title-icon {
+    width: 37px;
+    height: 37px;
+    margin-right: 4px;
+    margin-left: 13px;
+  }
+
+  .menu__title {
+    color: $title-color;
+    font-family: "Poppins", sans-serif;
+    font-size: 26px;
+    font-weight: 600;
+    line-height: 1.5;
+    letter-spacing: 0.01em;
+    margin-top: 2px;
+  }
+
+  .menu__title--text {
+    color: #838383;
+    font-family: "Poppins", sans-serif;
+    font-size: 10px;
+    font-weight: 500;
+    line-height: 1.5;
+    letter-spacing: -0.01em;
+    margin-top: 19px;
+  }
+
+  .menu__toggle {
+    display: none;
+    cursor: pointer;
+    background: none;
+    border: none;
+
+    .menu__toggle-icon {
+      width: 24px;
+      height: 24px;
+    }
+  }
+
+  .menu__list {
+    margin-top: 22px;
+
+    .menu__item,
+    .menu__item__accent {
+      display: flex;
+      gap: 14px;
+      padding: 11px 8px 11px 11px;
+      border-radius: 8px;
+      width: 256px;
+      height: 46px;
+      margin-top: 42px;
+
+      &:hover {
+        background-color: $menu-hover-color;
+        color: white;
+
+        .menu__item__text {
+          color: $menu-text-color-accent;
+        }
       }
-  
-      .menu__person-info-text {
-        color: $title-color;
+
+      .menu__item__text {
+        color: $menu-text-color;
         font-family: "Poppins", sans-serif;
         font-size: 14px;
         font-weight: 500;
         line-height: 1.5;
-        letter-spacing: 0.01em;
-      }
-  
-      .menu__person-info-text {
-        font-family: "Poppins", sans-serif;
-        font-size: 12px;
-        font-weight: 400;
-        line-height: 1.5;
-        letter-spacing: 0.01em;
+        letter-spacing: -0.01em;
+        margin-top: 3px;
       }
     }
-  
-    @media screen and (max-width: 480px) {
-        .menu__list {
-            display: flex;
-            flex-direction: column;
-            position: relative;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background-color: $menu-text-color-accent;
-            border-radius: 8px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            transition: transform 0.3s ease-in-out;
-      
-            &.menu__list--active {
-              transform: translateX(0);
-            }
-      
-            .menu__item,
-            .menu__item__accent {
-              padding: 10px;
-              width: 100%;
-              height: auto;
-      
-              .menu__item-icon {
-                margin-left: 0;
-              }
-            }
-      
-            .menu__person {
-              margin-top: 0;
-            }
-          }
-        }
+
+    .menu__item__accent {
+      background-color: $menu-hover-color;
+      display: flex;
+      gap: 14px;
+      padding: 11px 8px 11px 11px;
+      border-radius: 8px;
+      width: 256px;
+      height: 46px;
+      margin-top: 42px;
+
+      .menu__item-icon {
+        width: 24px;
+        height: 24px;
+      }
+
+      .menu__item__text__accent {
+        color: $menu-text-color-accent;
+        font-family: "Poppins", sans-serif;
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 1.5;
+        letter-spacing: -0.01em;
+        margin-top: 3px;
+      }
+    }
+
+    .menu__item-icon {
+      width: 24px;
+      height: 24px;
+      margin-left: 24px;
+    }
+
+    .menu__icon {
+      width: 16px;
+      height: 16px;
+      margin-top: 5px;
+      margin-left: auto;
+    }
   }
-  
+
+  .menu__person {
+    display: flex;
+    gap: 12px;
+    margin-top: 596px;
+    margin-bottom: 76px;
+    margin-left: 28px;
+    position: relative;
+
+    .menu__person-image {
+      width: 42px;
+      height: 42px;
+    }
+
+    .menu__person-info-text {
+      color: $title-color;
+      font-family: "Poppins", sans-serif;
+      font-size: 14px;
+      font-weight: 500;
+      line-height: 1.5;
+      letter-spacing: 0.01em;
+    }
+
+    .menu__person-info-text {
+      font-family: "Poppins", sans-serif;
+      font-size: 12px;
+      font-weight: 400;
+      line-height: 1.5;
+      letter-spacing: 0.01em;
+    }
+  }
+
+  @media screen and (max-width: 480px) {
+    .menu__list {
+      display: flex;
+      flex-direction: column;
+      position: relative;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: $menu-text-color-accent;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease-in-out;
+
+      &.menu__list--active {
+        transform: translateX(0);
+      }
+
+      .menu__item,
+      .menu__item__accent {
+        padding: 10px;
+        width: 100%;
+        height: auto;
+
+        .menu__item-icon {
+          margin-left: 0;
+        }
+      }
+
+      .menu__person {
+        margin-top: 0;
+      }
+    }
+  }
+}
